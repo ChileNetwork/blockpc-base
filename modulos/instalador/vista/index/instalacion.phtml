@@ -1,0 +1,63 @@
+<nav class="container navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="[URL_BASE]instalador">Instalación BlockPC</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav justify-content-center">
+			<li class="nav-item">
+				<a class="nav-link" href="[URL_BASE]instalador">Inicio</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" href="#">Instalación</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="[URL_BASE]instalador/configuracion">Configuración</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Módulos</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="[URL_BASE]instalador/grupos">Grupos</a>
+					<a class="dropdown-item" href="[URL_BASE]instalador/modulos">Módulos</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="[URL_BASE]instalador/controladores">Controladores</a>
+					<a class="dropdown-item" href="[URL_BASE]instalador/modelos">Módelos</a>
+					<a class="dropdown-item" href="[URL_BASE]instalador/vistas">Vistas</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Templates</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="[URL_BASE]instalador/plantilla">Clase Plantilla</a>
+					<a class="dropdown-item" href="[URL_BASE]instalador/vista">Clase Vista</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</nav>
+<div class="container">
+    <h2><i class="fa fa-home mr-1"></i> Sobre localhost</h2>
+    <div class="card sin-borde mb-2">
+		<div class="card-body">
+			<h5 class="card-title">Pasos Previos</h5>
+			<p class="card-text mb-1">Se necesita un servidor local y tener instalado PHP 7. Una version anterior de PHP (< 7.0) podria mostrar alertas en algunas llamadas a funciones que requieren argumentos. Si no puede actualizar PHP entonces elimine de las funciones las <em>declaraciones de tipo</em> en los argumentos.</p>
+			<p class="card-text mb-1">El uso de base de datos es requerido según la necesidad del proyecto. Esta versión del framework usa una base de datos de usuarios que puede implementar en <b>MySQL</b> o <b>MariaDB</b> por medio del script <b>base.sql</b> ubicado en la <b>carpeta db</b> dentro del directorio <b>archivos</b>.</p>
+			<p class="card-text mb-1">La conexión a la BD se realiza por medio de la <b>extensión PDO</b> de PHP lo que permite mayor flexibilidad en la elección del motor de base de datos a usar en un proyecto.</p>
+		</div>
+		<div class="card-body">
+			<h5 class="card-title">Descarga</h5>
+			<p class="card-text mb-1">Descargar el framework, descomprimir el archivo. Cambiar el nombre de la carpeta a <b>proyecto</b>.</p>
+			<p class="card-text mb-1">Ingresar por tu navegador favorito a <span class="text-primary">http://localhost/proyecto/</span>. Si todo sale bien se mostrara una pagina web con la información necesaria para que crees tu propio proyecto.</p>
+		</div>
+		<pre><code class="php">&lt;?php 
+/* core/configuracion.php */
+# ... mas código
+define('URL_BASE', $uri . 'proyecto/'); # Nombre de la carpeta en localhost
+# ... mas código
+define('APP_NAME', 'Nombre del Proyecto'); # Nombre de la aplicación
+# ... mas código
+		</code></pre>
+	  	<div class="card-body">
+		</div>
+	</div>
+</div>

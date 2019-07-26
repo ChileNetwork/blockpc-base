@@ -1,0 +1,104 @@
+<nav class="container navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="[URL_BASE]instalador">Instalación BlockPC</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav justify-content-center">
+			<li class="nav-item">
+				<a class="nav-link active" href="#">Inicio</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="[URL_BASE]instalador/instalacion">Instalación</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="[URL_BASE]instalador/configuracion">Configuración</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Módulos</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="[URL_BASE]instalador/grupos">Grupos</a>
+					<a class="dropdown-item" href="[URL_BASE]instalador/modulos">Módulos</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="[URL_BASE]instalador/controladores">Controladores</a>
+					<a class="dropdown-item" href="[URL_BASE]instalador/modelos">Módelos</a>
+					<a class="dropdown-item" href="[URL_BASE]instalador/vistas">Vistas</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Templates</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="[URL_BASE]instalador/plantilla">Clase Plantilla</a>
+					<a class="dropdown-item" href="[URL_BASE]instalador/vista">Clase Vista</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</nav>
+<div class="container">
+	<h2>Framework Blockpc</h2>
+	<div class="card sin-borde mb-2">
+		<div class="card-body">
+			<h5 class="card-title">Breve Resumen</h5>
+			<p class="card-text mb-1">Framework desarrollado bajo la arquitectura MVC y el lenguaje PHP.</p>
+			<p class="card-text mb-1">Esta pensado para proyectos o aplicaciones de corto y mediano alcance. La fiabilidad y eficiencia del proyecto terminado solo queda en manos del desarrollador y de los beneficios y alcances de PHP con el proyecto.</p>
+			<p class="card-text mb-1">Funciona bajo la construcción de módulos, implementados bajo la arquitectura MVC.</p>
+			<p class="card-text mb-1">Esta versión del framework usa <a href="//getcomposer.org" target="_blank">composer</a>. Usa su propia clase <b>Autoload</b> para la carga de clases.</p>
+			<p class="card-text mb-1">Implementa tanto un <b>frontend</b> como un <b>backend</b>. Para el primero no se necesita una base de datos, en cambio para un sistema con <b>backend</b> si es requerido. Esta versión implementa ambas.</p>
+			<small>Página Oficial <a href="//www.blockpc.cl" target="_blank">www.blockpc.cl</a></small>
+		</div>
+	</div>
+	<h2>Algunas Características</h2>
+	<div class="card sin-borde mb-2">
+		<div class="card-body">
+			<h5 class="card-title">Construido bajo PHP 7</h5>
+			<p class="card-text mb-1">Si bien el desarrollo del framework empezó con la versión de PHP 5.3, a día de hoy este funciona bajo PHP en su versión 7 sin problemas.</p>
+			<p class="card-text mb-1">El desarrollo avanza hacia una estructura completa bajo PHP 7, sin embargo aun quedan funciones nativas de versiones antiguas del framework en PHP 5.3+</p>
+			<small><a href="//php.net/manual/es/migration70.new-features.php" target="_blank">Migración a PHP 7</a></small>
+		</div>
+		<div class="card-body">
+			<h5 class="card-title">Framework MVC</h5>
+			<p class="card-text mb-1">Desarrollado bajo el patrón de arquitectura Modelo-Vista-Controlador lo que garantiza modularidad, mantenibilidad y reusabilidad de los componentes.</p>
+      		<small><a href="//es.wikipedia.org/wiki/Modelo-vista-controlador" target="_blank">Patrón MVC</a></small>
+		</div>
+		<div class="card-body">
+			<h5 class="card-title">Acceso a datos</h5>
+			<p class="card-text mb-1">El acceso a datos es manejado por el modelo de cada controlador y estos modelos heredan de la clase PDO de PHP.</p>
+      		<small><a href="//php.net/manual/es/book.pdo.php" target="_blank">Extensión PDO</a></small>
+		</div>
+		<div class="card-body">
+			<h5 class="card-title">Desarrollo por módulos</h5>
+			<p class="mb-1">Un <b>modulo</b> hace referencia a un conjunto de carpetas bajo la arquitectura MVC y que cumple con una tarea especifica en un proyecto dado. El modulo por defecto es llamado <b>index</b> y esta contenido dentro de una carpeta con el mismo nombre <b>index</b></p>
+	  		<p class="mb-1">Un <b>grupo</b> hace referencia a un conjunto de módulos, los cuales realizan tareas independientes pero necesarias para una sección del proyecto. Cada <b>Grupo</b> debe incluir, al menos, el módulo por defecto.</p>
+		</div>
+		<div class="card-body">
+			<h5 class="card-title">Uso de URLs amigables</h5>
+			<p class="card-text mb-1">Una <b>URL amigable</b> son aquellos enlaces que para un usuario tienen un sentido y son fáciles de recordar.</p>
+		</div>
+		<div class="card-body">
+			<h5 class="card-title">Uso de librerías externas</h5>
+			<p class="card-text mb-1">El uso de librerías externas solo depende del desarrollador y de la librería en cuestión.<br>Se puede optar por <b>Composer</b> sin mayores problemas para conseguir estas.</p>
+      		<small><a href="//getcomposer.org/" target="_blank">Web de Composer</a></small>
+		</div>
+	</div>
+	<h2>Sobre esta versión del framework</h2>
+	<div class="card sin-borde mb-2">
+		<div class="card-body">
+			<h5 class="card-title">Versión con <b>Composer</b></h5>
+			<p class="card-text mb-1">Esta es la versión del framework con composer. Usa su clase <b>Autoload</b> para la carga de clases.</p>
+			<p class="card-text mb-1">¿Existe una versión del framework sin composer? Si, usa una clase <b>Autoload</b> para la carga de clases. La clase <b>Autoload</b> es tomada desde la pagina de <b>PHP FIG</b>.</p>
+			<small><a href="//www.php-fig.org/psr/psr-4/" target="_blank">Autoload PSR-4</a></small>
+		</div>
+		<div class="card-body">
+			<h5 class="mb-1">Versión con sistema <b>Backend</b></h5>
+			<p class="card-text mb-1">Esta versión viene implementada con una pequeña base de datos de usuarios y un <b>backend</b> para la administración de los mismos.</p>
+			<p class="card-text mb-1">¿Es necesario el sistema <b>backend</b> para el framework? Si no usas <b>Bases de datos</b> pues entonces no, si usas, la recomendación es si.</p>
+			<p class="card-text mb-1">El uso de base de datos con el framework esta supeditado a las necesidades del desarrollo.</p>
+		</div>
+		<div class="card-body">
+			<h5 class="mb-1">Versión con <b>ACL</b></h5>
+			<p class="mb-1">Al existir en esta version un sistema <b>backend</b>, esta versión implementa un sistema de control de accesos.</p>
+			<p class="mb-1">De no existir una <b>base de datos</b> con un sistema de usuarios y permisos, la clase <b>Sesión</b> implementada ofrece un sistema manual para configurar una Lista <b>ACL</b></p>
+		</div>
+	</div>
+</div>
